@@ -7,7 +7,9 @@ function setup() {
     treeArr.forEach(val=>{
         tree.addValue(val);
     })
-    console.log(tree);
+    tree.traverse()
+    // console.log(tree);
+    tree.search(8)
     // console.log("hello there")
 }
 
@@ -34,6 +36,26 @@ class Node{
             this.right.addNode(n);
         }
     }
+    visit(){
+        if(this.left !== null){
+            this.left.visit();
+        }
+        console.log(this.value);
+        if(this.right !== null){
+            this.right.visit();
+        }
+    }
+    search(val){
+        if(this.value === val){
+            return val;
+        }else if(val < this.value && this.left != null){
+            return this.left.search(val);
+        }else if(val > this.value && this.right != null){
+            return this.right.search(val);
+
+        }
+        return null
+    }
 }
 
 class Tree{
@@ -47,5 +69,12 @@ class Tree{
         }else{
             this.root.addNode(n)
         }
+    }
+    traverse(){
+        this.root.visit();
+    }
+    search(val){
+        let found = this.root.search(val)
+        console.log("FOUND...",found);
     }
 }
