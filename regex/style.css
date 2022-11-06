@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    background-color: rgb(170, 182, 143);
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+button:hover{
+    box-shadow: rgba(133, 141, 113, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: rgba(255, 255, 255,0.5);
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+}
+.gamescreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+.header{
+    width: 100%;
+    background-color: #555f65;
+    border-radius: 5px;
+    color: white;
+}
+.header h1{
+    text-align: center;
+    padding: 10px 0;
+}
+.gamescreen div{
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.controls button{
+    margin-right: 20px;
+}
+.screenTop{
+    width: 100%;
+}
+.screenTop input{
+    border: none;
+    background-color: #e2c7ad;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 3px;
+    margin-top: 8px;
+    color: rgb(58, 56, 56);
+}
+
+.screenTop input:hover{
+    box-shadow: rgba(58, 56, 56, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.screenTop input:focus{
+    outline: none;
+    box-shadow: rgba(58, 56, 56, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
