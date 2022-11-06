@@ -3,11 +3,17 @@ C8B2A1
 E7D0B7
 AAB28E
 4B514F */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+label{
+    font-weight: bold;
+    color: rgb(87, 85, 85);
 }
 button{
     border: none;
